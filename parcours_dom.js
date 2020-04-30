@@ -1,4 +1,4 @@
-function chopeId(element, classeToMove, attributName, attributValues) {
+function findElementAndMoveClass(element, classeToMove, attributName, attributValues) {
     for (const attributValue of attributValues) {
         if ($(element).attr(attributName) !== attributValue) { // si c'est pas le bon id -> add
             $(element).addClass(classeToMove);
